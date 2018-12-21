@@ -12,8 +12,8 @@ import time
 from fastai import *
 from fastai.text import *
 
-model_file_url = 'https://drive.google.com/uc?export=download&id=1BSFr6LtKeQ2ueBGHsKkZ2eOfHFgKZX6j'
-model_file_name = 'tweet_fine_tuned'
+model_file_url = 'https://www.dropbox.com/s/dyamqg5rcqpogxd/s4_eminem_fine_tuned_v1.pth?raw=1'
+model_file_name = 's4_eminem_fine_tuned_v1'
 path = Path(__file__).parent
 
 app = Starlette()
@@ -67,9 +67,9 @@ def textResponse(data):
             words[i] = ''
         elif word == 'xxup':
             words[i+1] = words[i+1].upper()
-            words[i] = ''     
+            words[i] = ''
         elif word == 'xxunk' or word == '(' or word == ')' or word == '"':
-            words[i] = ''   
+            words[i] = ''
         elif word == ',':
             words[i] = ''
         elif word == '.' or word == '?' or word == '!' or word == ';':
