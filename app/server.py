@@ -12,7 +12,7 @@ import time
 from fastai import *
 from fastai.text import *
 
-model_file_url = 'https://www.dropbox.com/s/dyamqg5rcqpogxd/s4_eminem_fine_tuned_v1.pth?raw=1'
+model_file_url = 'https://www.dropbox.com/s/bp03jmi0p2b72up/s2_eminem_fine_tuned_v1.pth?raw=1'
 model_file_name = 's4_eminem_fine_tuned_v1'
 path = Path(__file__).parent
 
